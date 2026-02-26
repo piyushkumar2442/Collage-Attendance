@@ -1,0 +1,33 @@
+//  index.html 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Attendance System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>College Attendance Login</h2>
+
+    <form id="loginForm">
+        <input type="text" id="rollNo" placeholder="Roll Number" required>
+        <input type="password" id="password" placeholder="Password" required>
+
+        <select id="role">
+            <option value="teacher">Teacher</option>
+            <option value="student">Student</option>
+        </select>
+
+        <button type="submit">Login</button>
+    </form>
+
+    <p>
+        Teacher → T001 / admin123 <br>
+        Students → 101–110 / 1234
+    </p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
