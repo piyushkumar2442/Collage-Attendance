@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Teacher Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <h3>Teacher Dashboard</h3>
+    <button onclick="logout()">Logout</button>
+</nav>
+
+<div class="container">
+
+    <h2>Add Student</h2>
+    <input type="text" id="studentRoll" placeholder="Roll No">
+    <input type="text" id="studentName" placeholder="Student Name">
+    <button onclick="addStudent()">Add Student</button>
+
+    <h2>Student List</h2>
+    <div id="studentList"></div>
+
+    <h2>Mark Attendance</h2>
+    <select id="attendanceRoll"></select>
+    <select id="subjectSelect"></select>
+    <button onclick="markAttendance('Present')">Present</button>
+    <button onclick="markAttendance('Absent')">Absent</button>
+
+    <h2>Export Attendance</h2>
+    <button onclick="exportCSV()">Export CSV</button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
